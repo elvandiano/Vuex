@@ -2,7 +2,7 @@
   <div id="list-product-elvan">
     <h2>Elvan Product</h2>
     <ul>
-      <li v-for="product in saleProducts">
+      <li v-for="product in dataSaleProducts">
         <span class="name">{{product.nama}}</span>
         <span class="price">{{product.harga}}</span>
       </li>
@@ -16,15 +16,20 @@
       /**
        * get Data product from State
        **/
-      products(){
+      dataProducts(){
         return this.$store.state.products;
       },
 
       /**
        * get Data products from Getters
        **/
-      saleProducts(){
+      dataSaleProducts(){
        return this.$store.getters.saleProducts;
+      },
+
+      elvantest(){
+        return this.$store.getters.elvantest;
+
       }
     }
   }

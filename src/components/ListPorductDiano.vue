@@ -24,7 +24,7 @@
       /**
        * get Data product from State
        **/
-      products() {
+      dataProducts() {
         return this.$store.state.products;
       },
 
