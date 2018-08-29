@@ -4,7 +4,6 @@ export default {
    **/
   saleProducts: state => {
     let saleProducts;
-
     saleProducts = state.products.map(product => {
       return {
         nama: "**" + product.nama + "**",

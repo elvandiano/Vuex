@@ -34,7 +34,6 @@
       /*saleProducts() {
         return this.$store.getters.saleProducts;
       },*/
-
       /**
        * get Data products using MapGetter from VUEX
        **/
